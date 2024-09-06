@@ -23,7 +23,7 @@ export const config: AppConfig = {
   name: 'Tradzx Cloud',
   icon: BotIcon,
   inviteUrl:
-    'https://discord.com/oauth2/authorize?client_id=1082606882784555058&permissions=8&integration_type=0&scope=bot',
+    'https://discord.com/oauth2/authorize?client_id=1082606882784555058&response_type=code&redirect_uri=https%3A%2F%2Fdashboard-tradzcloudv1.vercel.app%2Fapi%2Fauth%2Fcallback&scope=identify',
   guild: {
     //filter guilds that user has no permissions to manage it
     filter: (guild) => (Number(guild.permissions) & PermissionFlags.ADMINISTRATOR) !== 0,
